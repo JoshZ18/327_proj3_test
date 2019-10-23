@@ -41,15 +41,20 @@ int main(int argc, char *argv[]){
 	//verify that correct number of params are entered
 	//otherwise return output WRONG_NUMB_ARGS and return FAIL_WRONG_NUMBER_ARGS
 	//expect progname infile passfile failfile   //program and 3 arguments, argc=4
-	if( argc != EXPECTED_NUMBER_ARGUMENTS ) {
-	   cout<< WRONG_NUMB_ARGS <<endl;
-	   return FAIL_WRONG_NUMBER_ARGS;
-	}
+//	if( argc != EXPECTED_NUMBER_ARGUMENTS ) {
+//	   cout<< WRONG_NUMB_ARGS <<endl;
+//	   return FAIL_WRONG_NUMBER_ARGS;
+//	}
 
-	string inputfile = argv[1];
-	string startTag = argv[2];
-	string endTag = argv[3];
-	string outputfile = argv[4];
+//	string inputfile = argv[1];
+//	string startTag = argv[2];
+//	string endTag = argv[3];
+//	string outputfile = argv[4];
+
+	string inputfile = "./data/testdata_full.txt";
+	string startTag = "<to>";
+	string endTag = "</to>";
+	string outputfile = "./output/outfile.txt";
 
 	//lets test the inputs
 	testfileIO(inputfile, outputfile);
